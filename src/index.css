@@ -11,8 +11,6 @@
   --color-zinc: #101010;
 }
 
-
-
 body {
   color: white;
   width: 100dvw;
@@ -38,4 +36,40 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.nav-height {
+  height: calc(100vh - 60px);
+}
+
+.hero-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+  color: var(--color-gray-100);
+  opacity: 0;
+}
+
+.btn {
+  padding-inline: calc(var(--spacing) * 5);
+  padding-block: calc(var(--spacing) * 2);
+  border-radius: var(--radius-3xl);
+  background-color: var(--color-blue);
+  margin-block: calc(var(--spacing) * 5);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  color: var(--color-blue);
+   border-color: var(--color-blue)
+}
+
+@media (width < 48rem) {
+  .hero-title {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
 }
