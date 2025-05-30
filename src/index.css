@@ -65,11 +65,81 @@ canvas {
   border-style: var(--tw-border-style);
   border-width: 1px;
   color: var(--color-blue);
-   border-color: var(--color-blue)
+  border-color: var(--color-blue);
+}
+.common-padding {
+  padding-block: calc(var(--spacing) * 20);
+  padding-inline: calc(var(--spacing) * 5);
+}
+.section-heading {
+  color: var(--color-gray);
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+  margin-bottom: calc(var(--spacing) * 5);
+  font-weight: var(--font-weight-medium);
+  opacity: 0;
+  --tw-translate-y: calc(var(--spacing) * 20);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
+.link {
+  color: var(--color-blue);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+  opacity: 0;
+  --tw-translate-y: calc(var(--spacing) * 20);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
+.link:hover {
+  text-decoration: underline;
+}
+.video-carousel-container {
+  position: relative;
+  width: 88vw;
+  height: 35vh;
+}
+.control-btn {
+  margin-left: calc(var(--spacing) * 4);
+  padding: calc(var(--spacing) * 4);
+  border-radius: calc(infinity * 1px);
+  background-color: var(--color-gray-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
 }
 
+@media (width >= 40rem) {
+  .common-padding {
+    padding-block: calc(var(--spacing) * 32);
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  .video-carousel-container {
+    width: 70vw;
+    height: 50vh;
+  }
+}
 @media (width < 48rem) {
   .hero-title {
     margin-bottom: calc(var(--spacing) * 10);
+  }
+}
+@media (width >= 48rem) {
+  .section-heading {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .video-carousel-container {
+    height: 70vh;
+  }
+}
+@media (width >= 64rem) {
+  .section-heading {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+    margin-bottom: calc(var(--spacing) * 0);
   }
 }
