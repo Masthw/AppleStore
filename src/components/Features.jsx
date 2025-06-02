@@ -42,7 +42,7 @@ const Features = () => {
         </div>
         <div className="flex flex-col justify-center items-center overflow-hidden">
           <div className="mt-32 mb-24 pl24">
-            <h2 className="text-5xl lg:text-7xl font-semibold">Iphone.</h2>
+            <h2 className="text-5xl lg:text-7xl font-semibold">iPhone.</h2>
             <h2 className="text-5xl lg:text-7xl font-semibold">
               Forged in Titanium.
             </h2>
@@ -95,7 +95,7 @@ const Features = () => {
                     Titanium has one of the best strenght-to-weight ratios of
                     any metal, making these our{" "}
                     <span className="text-white">
-                      lightest Pro models ever.
+                      lightest Pro models ever. {" "}
                     </span>
                     You'll notice the difference the moment you pick oe up.
                   </p>
