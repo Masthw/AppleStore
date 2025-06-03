@@ -11,6 +11,10 @@
   --color-zinc: #101010;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
   width: 100dvw;
@@ -181,6 +185,59 @@ canvas {
   margin-top: calc(var(--spacing) * 5);
 }
 
+.hiw-title {
+  font-size: var(--text-4xl);
+  line-height: var(--tw-leading, var(--text-4xl--line-height));
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+}
+
+.hiw-subtitle {
+  color: var(--color-gray);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+  text-align: center;
+  padding-block: calc(var(--spacing) * 10);
+  text-align: center;
+}
+
+.hiw-video {
+  position: absolute;
+  width: 95%;
+  height: 90%;
+  border-radius: 56px;
+  overflow: hidden;
+}
+
+.hiw-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: calc(var(--spacing) * 24);
+}
+
+.hiw-text {
+  color: var(--color-gray);
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+  font-weight: var(--font-weight-normal);
+}
+
+.hiw-bigtext {
+  color: var(--color-white);
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+  font-weight: var(--font-weight-normal);
+  margin-block: calc(var(--spacing) * 2);
+}
+
+.g_fadeIn {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
 @media (width >= 40rem) {
   .common-padding {
     padding-block: calc(var(--spacing) * 32);
@@ -213,6 +270,25 @@ canvas {
   .feature-text {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .hiw-title {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
+  }
+  .hiw-subtitle {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .hiw-text-container {
+    flex-direction: row;
+  }
+  .hiw-text {
+    font-weight: var(--font-weight-semibold);
+  }
+  .hiw-bigtext {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+    font-weight: var(--font-weight-semibold);
   }
 }
 @media (width >= 64rem) {
